@@ -1,7 +1,3 @@
 <h1>Welcome to Simple PHP MVC Starter!</h1>
 
-<ul>
-    <?php foreach ($journals as $journal) : ?>
-        <li><?= $journal->name ?> (<?= $journal->publishedYear ?>)</li>
-    <?php endforeach; ?>
-</ul>
+<h2>Total users: <?php echo $total_users; ?></h2>

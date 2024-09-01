@@ -1,0 +1,2 @@
+#!/bin/bash
+podman run -it --rm --name php-exec -v ./:/app -w /app/public -p 9999:9999 php:8.2-fpm php $@

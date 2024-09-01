@@ -1,0 +1,6 @@
+#!/bin/bash
+podman run --rm --interactive --tty \
+  --env COMPOSER_HOME \
+  --env COMPOSER_CACHE_DIR \
+  --volume ./:/app \
+  docker.io/library/composer:2.7 composer $@
