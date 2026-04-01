@@ -8,7 +8,7 @@ $db = new DB();
 
 $db->addConnection([
     "driver" => "sqlite",
-    "database" => "../src/database/database.db",
+    "database" => "../database/database.db",
     "charset" => "utf8",
     "collation" => "utf8_unicode_ci",
     "prefix" => "",
@@ -20,4 +20,4 @@ $db->bootEloquent();
 // load .env
 Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . '/../')->load();
 
-$router = require "../src/Routes/index.php";
+$router = require "../routes/main.php";

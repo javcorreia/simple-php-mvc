@@ -7,9 +7,9 @@ use App\Models\User;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function index(): void
     {
-        $totalUsers = User::count();
+        $totalUsers = User::query()->count();
 
         $this->render("index", ["total_users" => $totalUsers]);
     }

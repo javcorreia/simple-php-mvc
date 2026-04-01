@@ -1,10 +1,13 @@
-# simple-php-mvc
+# Simple PHP MVC
 
-## needed tools
+Example of a simple PHP MVC framework. 100% vanilla PHP.  
+**_For educational purposes._**
+
+## Prerequisites
 
 ### Either install the following:
-1. [composer](https://getcomposer.org/download/)
-2. [PHP 8.2](https://www.php.net/downloads)
+1. [Composer](https://getcomposer.org/download/)
+2. [PHP >=8.2](https://www.php.net/downloads)
 
 ---
 
@@ -13,7 +16,7 @@
 
 ---
 
-## project setup
+## Project setup
 
 - copy `.env.example` to `.env`
 ```shell
@@ -34,7 +37,9 @@ bin/php -S 0.0.0.0:9999
 - go to project_root (where composer.json resides) and run the following commands:
   - `composer install`
   - `php -S 127.0.0.1:9999`
-- In the browser go to `http://127.0.0.1:9999`
+
+
+In the browser go to `http://127.0.0.1:9999`
 
 ---
 
