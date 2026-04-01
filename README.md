@@ -8,24 +8,47 @@
 
 ---
 
-### or use docker
-- using composer:
-```shell
-docker run --rm --interactive --tty \
-  --env COMPOSER_HOME \
-  --env COMPOSER_CACHE_DIR \
-  --volume ./:/app \
-  docker.io/library/composer:2.7 composer <comand>
-```
-- using php:
-```shell
-docker run -it --rm --name php-exec -v ./:/app -w /app/public -p 9999:9999 php:8.2-fpm php -S 127.0.0.1:9999
-```
+### or use podman
+- install [podman](https://podman.io/docs/installation)
 
 ---
 
 ## project setup
+
+- copy `.env.example` to `.env`
+```shell
+cp .env.example .env
+```
+
+### using podman
+- go to project_root (where composer.json resides) and run the following commands:
+```shell
+bin/composer install
+```
+- using php:
+```shell
+bin/php -S 0.0.0.0:9999
+```
+
+### using local install
 - go to project_root (where composer.json resides) and run the following commands:
   - `composer install`
   - `php -S 127.0.0.1:9999`
 - In the browser go to `http://127.0.0.1:9999`
+
+---
+
+## Routing
+
+---
+
+## Controllers
+
+---
+
+## Models
+
+---
+
+## Views
+

@@ -1,6 +1,7 @@
 {
   "name": "javcorreia/simple-php-mvc",
-  "version": "1.0",
+  "description": "simple mvc starter for educational purposes",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "App\\": "src/"
@@ -13,11 +14,16 @@
     }
   ],
   "require": {
-    "illuminate/database": "^11.0"
+    "illuminate/database": "^11.0",
+    "twig/twig": "^3.24",
+    "vlucas/phpdotenv": "^5.6"
   },
   "config": {
     "platform": {
       "php": "8.2"
     }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^7.4"
   }
 }

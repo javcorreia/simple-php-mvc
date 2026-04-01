@@ -17,4 +17,7 @@ $db->addConnection([
 $db->setAsGlobal();
 $db->bootEloquent();
 
+// load .env
+Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . '/../')->load();
+
 $router = require "../src/Routes/index.php";
