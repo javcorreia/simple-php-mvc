@@ -1,6 +1,6 @@
 # Simple PHP MVC
 
-Example of a simple PHP MVC framework. 100% vanilla PHP.  
+Example of a simple PHP MVC framework.  
 **_For educational purposes._**
 
 ## Prerequisites
