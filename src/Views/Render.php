@@ -2,6 +2,7 @@
 
 namespace App\Views;
 
+use App\Views\Extensions\TwigEnvExtension;
 use Twig\Environment;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
@@ -21,6 +22,12 @@ class Render
             self::$instance->twig = new Environment($loader, [
                 'cache' => $_ENV['APP_ENV'] === 'dev' ? false : __DIR__ . '/../../var/cache/templates',
             ]);
+
+            // load custom twig extensions
+            foreach (glob(__DIR__ . '/Extensions/*.php') as $file) {
+                $twigExtension = 'App\\Views\\Extensions\\' . basename($file, '.php');
+                self::$instance->twig->addExtension(new $twigExtension());
+            }
         }
 
         return self::$instance;

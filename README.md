@@ -22,6 +22,10 @@ Example of a simple PHP MVC framework. 100% vanilla PHP.
 ```shell
 cp .env.example .env
 ```
+- initialise sqlite database
+```shell
+bin/php ../database/db-init.php
+```
 
 ### using podman
 - go to project_root (where composer.json resides) and run the following commands:
@@ -91,3 +95,11 @@ See [Eloquent documentation](https://laravel.com/docs/master/eloquent) for more 
 View templates are located in the `templates` folder.  
 Templates are rendered with Twig.  
 See [Twig documentation](https://twig.symfony.com/doc/3.x/) for more info.
+
+### Twig Extensions
+
+Custom Twig extensions are located in `src/Views/Extensions/`.  
+They are autoloaded by the Render.  
+See [Twig documentation](https://twig.symfony.com/doc/3.x/advanced.html#creating-an-extension) for more info on creating Twig extensions.  
+
+- an example extension is located in `src/Views/Extensions/TwigEnvExtension.php` which adds `env` function to Twig, to access the environment variables in the templates.

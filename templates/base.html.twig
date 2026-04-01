@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{% block title %}{% endblock %} - Simple PHP MVC Starter</title>
+        <title>{% block title %}{% endblock %} - {{ env('APP_NAME') }}</title>
     </head>
     <body>
         <div id="content">{% block content %}{% endblock %}</div>
