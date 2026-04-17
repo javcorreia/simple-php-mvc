@@ -1,18 +1,47 @@
 # Simple PHP MVC
+> Forked from [Mahesh Samudra's simple-php-mvc-starter](https://github.com/maheshsamudra/simple-php-mvc-starter)
 
-Example of a simple PHP MVC framework.  
+Example of a simple PHP MVC framework.
+
+## Objective
 **_For educational purposes._**
-
-## Prerequisites
-
-### Either install the following:
-1. [Composer](https://getcomposer.org/download/)
-2. [PHP >=8.2](https://www.php.net/downloads)
+- Used in the past as a base for some PHP interview questions.
+- Now I just use it as a starter-kit playground for learning and ideas
 
 ---
 
-### or use podman
-- install [podman](https://podman.io/docs/installation)
+## Features
+- Routing
+- Controllers
+- Models
+- Views
+- Twig templates
+- SQLite database
+- Twig extensions
+
+---
+
+## Prerequisites
+
+### For local installation of PHP and composer:
+Official links for PHP and composer:
+1. [Composer](https://getcomposer.org/download/)
+2. [PHP >=8.2](https://www.php.net/downloads)
+
+Alternatively: 
+- go with XAMPP (windows/linux/mac)
+  - [XAMPP](https://www.apachefriends.org/download.html)
+- go with Laravel herd lite that installs composer and php (windows/linux/mac)
+  - [PHPNew](https://php.new/)
+
+---
+
+### Podman/Docker
+Podman can be used to run the php and composer without installing them and keep your system clean.
+- install [podman](https://podman.io/docs/installation) if you don't have it already
+- use the scripts in `bin` folder to run the php and composer
+
+> If docker is preferred (already installed), adapt the scripts in `bin` folder to use docker.
 
 ---
 
